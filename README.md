@@ -1,24 +1,42 @@
-# Laboratorio documental: paquetes públicos
+# Laboratorio documental: datos públicos
 
-Datos completamente ficticios de Nexo Industrial para comparar tres estructuras documentales.
+Datos completamente ficticios de Nexo Industrial para comparar tres estructuras documentales. Los archivos están **sin comprimir en la rama main** y pueden consultarse individualmente, sin descargar ZIP ni iniciar sesión.
 
-Cada ZIP incluye la documentación de una sola versión y los mismos **20 correos, 25 tickets y 10 proyectos**, en los archivos `correos.json`, `tickets.json` y `proyectos.json`.
+## Documentación por versión
 
-## Descargas directas · v1.0.0
+- [V1 · Caótica](v1_caotica/): 108 PDF en sus carpetas originales, sin índice añadido.
+- [V2 · Indexada](v2_indexada/): 100 PDF, índices y CSV. [Índice general](v2_indexada/INDICE_GENERAL.md) · [CSV de documentos](v2_indexada/indice_documentos.csv).
+- [V3 · Markdown y chunks](v3_markdown/): 100 documentos Markdown, índices, 300 chunks y SQLite. [Índice general](v3_markdown/INDICE_GENERAL.md) · [Chunks JSON](v3_markdown/chunks.json).
 
-- [V1 · Caótica: 108 PDF](https://github.com/DOKOS-TAYOS/laboratorio-documental-datos/releases/download/v1.0.0/laboratorio_v1_chatgpt.zip)
-- [V2 · Indexada: 100 PDF e índices](https://github.com/DOKOS-TAYOS/laboratorio-documental-datos/releases/download/v1.0.0/laboratorio_v2_chatgpt.zip)
-- [V3 · Markdown: 100 documentos, índices, 300 chunks y SQLite](https://github.com/DOKOS-TAYOS/laboratorio-documental-datos/releases/download/v1.0.0/laboratorio_v3_chatgpt.zip)
+## Correos, tickets y proyectos
 
-Las descargas no requieren iniciar sesión. Los ZIP están en Releases, separados del código de la aplicación. No contienen respuestas de evaluación, correspondencias internas ni otras versiones.
+Los ejemplos son comunes a las tres versiones y se publican una sola vez en la raíz:
 
-[Explorar la web de Streamlit](https://laboratorio-documental-empresa-chatgpt.streamlit.app/).
+| Archivo | Registros | Lectura directa |
+|---|---:|---|
+| [correos.json](correos.json) | 20 | [JSON sin formato](https://raw.githubusercontent.com/DOKOS-TAYOS/laboratorio-documental-datos/main/correos.json) |
+| [tickets.json](tickets.json) | 25 | [JSON sin formato](https://raw.githubusercontent.com/DOKOS-TAYOS/laboratorio-documental-datos/main/tickets.json) |
+| [proyectos.json](proyectos.json) | 10 | [JSON sin formato](https://raw.githubusercontent.com/DOKOS-TAYOS/laboratorio-documental-datos/main/proyectos.json) |
+
+[Índice V3 sin formato](https://raw.githubusercontent.com/DOKOS-TAYOS/laboratorio-documental-datos/main/v3_markdown/INDICE_GENERAL.md) · [Chunks V3 sin formato](https://raw.githubusercontent.com/DOKOS-TAYOS/laboratorio-documental-datos/main/v3_markdown/chunks.json).
+
+Para obtener otro archivo sin formato, utiliza el botón **Raw** de GitHub. También puedes añadir su ruta relativa a `https://raw.githubusercontent.com/DOKOS-TAYOS/laboratorio-documental-datos/main/`.
 
 ## Uso con asistentes
 
-Proporciona el enlace directo de una sola versión y pide descargar, extraer y analizar exclusivamente ese paquete. El asistente necesita herramientas para descargar y abrir archivos; si no las tiene, descarga el ZIP y adjúntalo manualmente a la conversación. El enlace no añade automáticamente archivos a la Biblioteca de ChatGPT.
+Proporciona el enlace del repositorio y pide consultar los archivos de main directamente, sin descargar ni extraer ZIP. Los Markdown, CSV y JSON son texto; los PDF y SQLite requieren herramientas capaces de leer esos formatos. No todos los asistentes pueden recorrer automáticamente un repositorio: facilita enlaces a archivos concretos si es necesario.
 
-Para comparar las versiones, utiliza conversaciones separadas y las mismas preguntas. Cada archivo JSON de ejemplos se puede leer directamente después de extraer el ZIP. SQLite requiere una herramienta de ejecución con soporte FTS5; los Markdown y chunks.json se pueden leer sin SQLite.
+Para comparar las versiones, utiliza las mismas preguntas y conserva los resultados separados. No se incluyen respuestas de evaluación, correspondencias internas ni código de la aplicación.
+
+[Explorar la web de Streamlit](https://laboratorio-documental-empresa-chatgpt.streamlit.app/).
+
+## ZIP opcionales · v1.0.0
+
+Los paquetes originales siguen disponibles como edición fija, con los ejemplos incluidos en cada ZIP:
+
+- [V1 · Caótica](https://github.com/DOKOS-TAYOS/laboratorio-documental-datos/releases/download/v1.0.0/laboratorio_v1_chatgpt.zip)
+- [V2 · Indexada](https://github.com/DOKOS-TAYOS/laboratorio-documental-datos/releases/download/v1.0.0/laboratorio_v2_chatgpt.zip)
+- [V3 · Markdown](https://github.com/DOKOS-TAYOS/laboratorio-documental-datos/releases/download/v1.0.0/laboratorio_v3_chatgpt.zip)
 
 ## Licencia
 
